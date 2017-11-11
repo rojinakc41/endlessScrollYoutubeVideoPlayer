@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_size_small"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.softech.youtubevideoplayer.MainActivity"
+    tools:showIn="@layout/activity_videos"
+      >
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/show_video_news_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+        android:id="@+id/load_more_videos_progress_bar"
+        android:layout_below="@+id/show_video_news_rv"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+   <include layout="@layout/layout_show_error_text"/>
+</RelativeLayout>
+
