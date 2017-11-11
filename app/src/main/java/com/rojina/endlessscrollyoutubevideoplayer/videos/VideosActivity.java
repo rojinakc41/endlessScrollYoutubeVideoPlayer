@@ -54,14 +54,9 @@ LinearLayoutManager linearLayoutManager;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Bundle bundle=getIntent().getExtras();
-        if(bundle!=null){
-            if(bundle.containsKey("name")){
-                name=bundle.getString("name");
-            }
-        }
+
         setContentView(R.layout.activity_videos);
-        setUpToolbar(name);
+        setUpToolbar(getString(R.string.toolbar_video));
         initializeUi();
 
     }

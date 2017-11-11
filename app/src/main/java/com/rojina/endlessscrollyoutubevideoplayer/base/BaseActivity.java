@@ -39,15 +39,15 @@ public class BaseActivity extends AppCompatActivity {
         Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(toolbarTile);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+      /*  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+       toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();
             }
         });
-
+*/
     }
 
 
